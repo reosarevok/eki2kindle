@@ -6,7 +6,7 @@
       <dc:Language>et</dc:Language>
       <dc:Creator>Your Name Here</dc:Creator>
       <dc:Description>Your Description Here</dc:Description>
-      <dc:Date>1/1/1111</dc:Date>
+      <dc:Date>0000-00-00</dc:Date>
     </dc-metadata>
     <x-metadata>
       <EmbeddedCover>dictionarycover.png</EmbeddedCover>
@@ -16,7 +16,7 @@
   </metadata>
   <manifest>
     <item id="cimage" media-type="image/png" href="dictionarycover.png" properties="coverimage"/>
-    <item id="item1" media-type="text/html" href="dict.html"></item>
+    <item id="item1" media-type="text/x-oeb1-document" href="dict.html"></item>
   </manifest>
   <spine toc="toc">
     <itemref idref="item1"/>

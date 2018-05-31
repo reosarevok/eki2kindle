@@ -82,7 +82,7 @@ def process_eki_dictionary(file):
 
 
 def build_dictionary(processed_dictionary, destination_file):
-    NSMAP = {"mbp": 'http://www.kreutzfeldt.de/mmc/mbp',
+    NSMAP = {"mbp": 'https://kindlegen.s3.amazonaws.com/AmazonKindlePublishingGuidelines.pdf',
              "idx": 'http://www.mobipocket.com/idx'}
 
     page = etree.Element('html', lang="et", nsmap=NSMAP)
@@ -93,7 +93,7 @@ def build_dictionary(processed_dictionary, destination_file):
 
     metaElt = etree.SubElement(headElt, 'meta', charset='UTF-8')
 
-    framesetElt = etree.SubElement(bodyElt, '{http://www.kreutzfeldt.de/mmc/mbp}frameset')
+    framesetElt = etree.SubElement(bodyElt, '{https://kindlegen.s3.amazonaws.com/AmazonKindlePublishingGuidelines.pdf}frameset')
 
     for entry in processed_dictionary:
         entryElt = etree.SubElement(framesetElt, '{http://www.mobipocket.com/idx}entry')
